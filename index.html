@@ -32,9 +32,9 @@
     <!-- Header section -->
     <header class="header">
       <h1 class="header__logo">ModernCo</h1>
-      <span class="header__mobile">
+      <button class="header__mobile" aria-label="Toggle menu">
         <i class="ph ph-list"></i>
-      </span>
+      </button>
       <nav class="header__nav">
         <ul class="nav__items">
           <li class="nav__item"><a href="" class="nav__link">Home</a></li>
@@ -173,7 +173,9 @@
               productivity by 300%."
             </p>
             <div class="testimonial__customer">
-              <span class="testimonial__avatar testimonial__avatar--primary">SM</span>
+              <span class="testimonial__avatar testimonial__avatar--primary"
+                >SM</span
+              >
               <div class="testimonial__customer-info">
                 <h3 class="testimonial__name">Sarah Mitchell</h3>
                 <p class="testimonial__role">CEO, TechCorp</p>
@@ -196,7 +198,9 @@
             </p>
 
             <div class="testimonial__customer">
-              <span class="testimonial__avatar testimonial__avatar--secondary">MJ</span>
+              <span class="testimonial__avatar testimonial__avatar--secondary"
+                >MJ</span
+              >
               <div class="testimonial__customer-info">
                 <h3 class="testimonial__name">Micheal Johnson</h3>
                 <p class="testimonial__role">CTO, InnovateLab</p>
@@ -218,7 +222,9 @@
             </p>
 
             <div class="testimonial__customer">
-              <span class="testimonial__avatar testimonial__avatar--primary">EC</span>
+              <span class="testimonial__avatar testimonial__avatar--primary"
+                >EC</span
+              >
               <div class="testimonial__customer-info">
                 <h3 class="testimonial__name">Emily Chen</h3>
                 <p class="testimonial__role">Marketing Director, GrowthCo</p>
@@ -297,4 +303,28 @@
       </footer>
     </section>
   </body>
+  <script>
+    // Mobile menu toggle
+    (function () {
+      const header = document.querySelector(".header");
+      const btn = document.querySelector(".header__mobile");
+      const navLinks = document.querySelectorAll(".nav__link");
+
+      if (!header || !btn) return;
+
+      btn.addEventListener("click", () => {
+        header.classList.toggle("open");
+      });
+
+      // Close when a nav link is clicked (mobile)
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => header.classList.remove("open"));
+      });
+
+      // Close on Escape
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") header.classList.remove("open");
+      });
+    })();
+  </script>
 </html>
