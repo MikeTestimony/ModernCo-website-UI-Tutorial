@@ -170,6 +170,7 @@ body {
 
 /* Hero section */
 .hero {
+  margin-top : 8rem;
   height: 100vh;
   background: linear-gradient(
     to right bottom,
