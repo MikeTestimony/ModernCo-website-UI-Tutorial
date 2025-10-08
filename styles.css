@@ -340,6 +340,15 @@ body {
   transform: translateY(-4px);
 }
 
+/* Make testimonial cards behave like feature cards on hover */
+.testimonial {
+  transition: all 0.3s;
+}
+.testimonial:hover {
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1);
+  transform: translateY(-4px);
+}
+
 /* Testimonials */
 .testimonials {
   background: var(--testimonials-bg);
@@ -434,6 +443,21 @@ body {
   background-color: transparent;
   border: 2px solid var(--white);
   color: var(--white);
+}
+
+/* Hover behavior for trial buttons to match other buttons */
+.btn--free:hover,
+.btn--demo:hover {
+  transform: translateY(-2px);
+  transition: all 0.25s;
+}
+
+/* Slight background tint on hover so the buttons feel interactive */
+.btn--free:hover {
+  background: rgba(255,255,255,0.12);
+}
+.btn--demo:hover {
+  background: rgba(255,255,255,0.12);
 }
 
 .trial__actions {
