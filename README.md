@@ -29,5 +29,12 @@ This project demonstrates best practices in responsive design, CSS organization,
 
 ---
 
+![bd9dfa4e21084a2b8143c811cc768854](https://github.com/user-attachments/assets/a9f1e477-ad2d-4c70-8d92-00eaa955e737)
 
 
+![1c8f354ad21342b4b312604136073e16](https://github.com/user-attachments/assets/d57a7aaa-2854-4fbc-9476-0b7f4218620b)
+
+
+![d68815527860427991f6a1f3cee0fc07](https://github.com/user-attachments/assets/d2995122-924f-42f7-8160-0fd0401bb5c1)
+
+![fdd857109bd6463f97c117ea4a4b9a9f](https://github.com/user-attachments/assets/b83772ee-e420-47ab-9f27-5250b877b2e6)
