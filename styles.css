@@ -195,7 +195,7 @@ body {
 
 /* Hero section */
 .hero {
-  margin-top : 3rem;
+  margin-top : 0.5rem;
   height: 100vh;
   background: linear-gradient(
     to right bottom,
