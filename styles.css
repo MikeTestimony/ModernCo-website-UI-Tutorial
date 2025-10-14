@@ -211,8 +211,7 @@ body {
 
 .hero__title {
   font-size: 6rem;
-  margin-bottom: 2rem;
-  line-height: 2;
+  margin-bottom: 2rem 0;
 }
 
 .hero__content {
